@@ -4,6 +4,7 @@ from db import engine
 from models import Base
 from routers import predict
 
+app = FastAPI()
 
 @app.get("/health", status_code=status.HTTP_200_OK, tags=["Health"])
 def health_check():
